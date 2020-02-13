@@ -1,0 +1,34 @@
+<p>foo works!</p>
+<p>foo {{messsage}}</p>
+<p [innerHTML]="message"></p>
+<p [innerHTML]="message"></p>
+
+
+<img src="{{heroImageUrl}}" alt="">
+<img [src]="heroImageUrl" alt="">
+<img bind-src="heroImageUrl">
+
+<button [disabled]="isButtonDisabled">Button</button>
+  <p>{{name.split('').reverse().join("-")}}</p>
+
+  <p>Heroes:</p>
+  <ul>
+      <li [id]="'list-' + hero" *ngFor="let hero of heroes;let i = index ">
+          {{i}}----> {{hero}}
+      </li>
+  </ul>
+   <div *ngIf="heroes.length"></div>
+   <ng-template #templateName>没有很多英雄</ng-template>
+   <div [class.hidden]="!isSpecial">Show with class</div>
+   <div [class.hidden]="!isSpecial">Hide with class</div>
+
+   <div [style.display]="isSpecial?'block':'none'">show with class</div>
+   <div [style.display]="isSpecial?'none':'block'">Hide with class</div>
+
+
+   <div [ngSwith]="currentHero">
+       
+           <div *ngSwitchCase="expression">output</div>
+           <div *ngSwitchDefault>tornado</div>
+
+   </div>
