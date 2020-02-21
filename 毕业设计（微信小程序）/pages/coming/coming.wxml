@@ -1,0 +1,11 @@
+<view class="container">
+  <p class="top">全城 ></p>
+<view class="item"  wx:for="{{cinema}}" data-url="ciname:name"  bind:tap="handleToggle" data="{{item}}"wx:key="index">
+  <p class="name">影院：{{item.name}}</p>
+  <p class="address">{{item.address}}</p>
+  <p  class="price">￥{{item.price}}起</p>
+</view>
+  
+
+  
+</view>

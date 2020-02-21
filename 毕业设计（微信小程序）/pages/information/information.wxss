@@ -1,0 +1,143 @@
+
+.bg{
+    width:100%;
+    height: 400rpx;
+    
+}
+.head{
+    position: relative;
+}
+.head .blur{
+    position: absolute;
+    width:100%;
+    height: 400rpx;
+    background: rgba(51, 51, 51, .3);
+    left:0;
+    top:0;
+    backdrop-filter: blur(10px);
+}
+.movie{
+    width:200rpx;
+    height:300rpx;
+    position: absolute;
+    top:200rpx;
+    right:30rpx;
+}
+.word{
+    position: absolute;
+    top:50rpx;
+    margin-left: 30rpx;
+}
+.word text{
+    display:block;
+    line-height: 90rpx;
+    font-size: 40rpx;
+    color:#fff;
+}
+.word .name{
+    font-size: 50rpx;
+}
+.like text{
+    display: inline-block;
+    color: #bd4858;
+    font-size: 30rpx;
+    margin-right: 10rpx;
+}
+.like{
+    margin-top: 50rpx;
+    color:#666;
+}
+.content>view{
+ background: #fff;  
+}
+.message>.detail{
+   font-size: 33rpx;
+   line-height: 56rpx;
+   color:#666;
+   margin-left: 50rpx;
+}
+.detail>text{
+    display: inline-block;
+    margin-left: 30rpx;
+    color:rgb(51, 48, 48);
+    width:600rpx
+}
+.message{
+    padding: 20rpx;
+}
+.nav{
+    color:#191a1b;
+    font-size: 45rpx;
+    margin-top: 20rpx;
+    margin-left:40rpx;
+    margin-bottom: 10rpx;
+    line-height: 70rpx;
+}
+.active{
+   
+    font-size: 33rpx;
+    line-height: 60rpx;
+    margin-top: 10rpx;
+    margin-left: 40rpx;
+}
+.scroll{
+    white-space: nowrap;
+}
+.scroll view{
+    display: inline-block;
+}
+.item{
+    width:200rpx;
+    height: 270rpx;
+}
+.foot text{
+  display: block;
+  width: 200rpx;
+}
+.foot .people{
+    margin-right: 30rpx;
+   
+}
+.foot{
+    padding: 20rpx;
+    margin-top: 30rpx;
+}
+.star image{
+    width:35rpx;
+    height:35rpx
+}
+.actor-name{
+    font-size: 30rpx;
+}
+.people-photo image{
+    width:280rpx;
+    height: 300rpx;
+    margin-right: 30rpx;
+}
+.loading{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background: white;
+    z-index: 100;
+}
+.comment{
+    position: fixed;
+    bottom: 0;
+   /* opacity: 0.9; */
+    background:#ff5f16;
+    height: 100rpx;
+    width: 100%;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background:rgb(231, 227, 227);
+    color:#797d82
+}
+

@@ -1,0 +1,10 @@
+<view class="item"  bind:tap="handleToggle">
+    <image class="bg" src="{{data.images.small}}" />
+    <p class="name">{{data.title}}</p>
+    <div class="genres">
+    <p >{{data.genres[0]}}</p>
+    <p >{{data.genres[1]}}</p>
+  </div>
+  <p  class="average">{{data.rating.average}}分</p>
+</view>
+  

@@ -1,0 +1,9 @@
+{
+  
+    "usingComponents": {
+      "v-movie":"/comonents/movie-item/movie-item",
+      "van-tab": "/vant-ui/tab/index",
+      "van-tabs": "/vant-ui/tabs/index"
+    }
+  
+}

@@ -1,0 +1,19 @@
+/* pages/popular/popular.wxss *//* 
+.item{
+    font-size: 36rpx;
+    width: 350rpx;
+   color:#615f5f;
+    margin-top: 10rpx;
+    background:#fff;
+    position: relative;
+    padding: 10rpx;
+} */
+
+swiper{
+    width:100%;
+    height: 440rpx;
+}
+.item{
+    height: 300rpx;
+    border-bottom: 1px solid #5d5d5d;
+}

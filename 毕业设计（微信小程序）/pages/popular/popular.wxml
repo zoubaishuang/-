@@ -1,0 +1,30 @@
+<view class="container">
+    <swiper>
+      <swiper-item >
+        <image src="/images/1.jpg" alt=""></image>
+      </swiper-item>
+      <swiper-item >
+        <image src="/images/3.jpg" alt=""></image>
+      </swiper-item>
+  
+    </swiper>
+    <van-tabs active="{{ active }}">
+        <van-tab title="正在热映">
+            <view class="flex-grid">
+                <v-movie class="item" wx:for="{{movie}}" data="{{item}}" wx:key="id">
+              </v-movie>
+              </view>
+          
+        </van-tab>
+        <van-tab title="即将上映">
+            <view class="flex-grid">
+                <v-movie class="item" wx:for="{{subjects}}" data="{{item}}" wx:key="id">
+              </v-movie>
+              </view>
+        </van-tab>
+          
+      </van-tabs>
+    
+    </view>
+    
+    

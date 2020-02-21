@@ -1,0 +1,20 @@
+<view class="debug" bindtap="play" hidden="{{!debug}}">
+    <view>摇一摇调试数据</view>
+    <view>x: {{x}}</view>
+    <view>y: {{y}}</view>
+    <view>z: {{z}}</view>
+    <view>showFilm: {{showFilm}}</view>
+    <view>loaded: {{loaded}}</view>
+    <view>change test: {{test}}</view>
+</view>
+<block wx:if="{{showFilm}}">
+  
+</block>
+<block wx:else>
+    <view class="welcome" style="background-image: url({{shakeWelcomeImg}})"></view>
+</block>
+
+
+<!-- 摇一摇音效 -->
+<audio src="{{shakeSoundUrl}}" id="shakeSound"></audio>
+<audio src="{{shakeCompleteSoundUrl}}" id="shakeCompleteSound"></audio>

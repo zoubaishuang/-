@@ -1,0 +1,69 @@
+<wxs src="../../utils/filter.wxs" module="tools"></wxs>
+<view class="loading" wx:if="{{isShow}}">
+    <van-loading size="24px" vertical>加载中...</van-loading>
+</view>
+<view  class="container" wx:else>
+<view class="head">
+    <image class="bg" src="{{movie.images.small}}" mode="aspectFill"></image>
+    <view class="blur"></view>
+
+<image class="movie" bind:tap="handleImage" data-url="{{movie.images.small}}" src="{{movie.images.small}}" ></image>
+<view class="word">
+<text class="name">{{movie.title}}</text>
+<text>{{movie.title}} · {{movie.year}}</text>
+<view class="like">
+    <text>{{movie.collect_count}}</text>人喜欢
+    <text> {{movie.ratings_count}}</text> 条评论</view>
+</view>
+</view>
+<view class="content">
+<view class="content-first">
+        <view class="message">
+    <view class="detail">
+            <view class="star">
+                    <image wx:for="{{tools.formatStar(movie.rating.stars)}}" wx:key="index"
+                    src="{{item==1?'/images/icon/star.png':'/images/icon/none-star.png'}}"></image>
+                        <text>{{movie.rating.average}}分</text>
+                    </view>
+    <view class="detail">导演: {{movie.directors[0].name}}</view>
+    <view class="detail">影人: {{movie.casts[0].name}} / {{movie.casts[1].name}}</view>
+    <view class="detail">类型: {{movie.genres}}</view></view>
+
+</view>
+</view>
+<view>
+    <view class="nav">剧情简介</view>
+    <view class="active">
+            {{movie.summary}}
+    </view>
+</view>
+<view class="foot">
+    <view class="nav">影人</view>   
+    <scroll-view  scroll-x="{{x}}" class="scroll">
+            <view class="people" wx:for="{{movie.casts}}" wx:key="index">
+                <image src="{{item.avatars.small}}" class="item"
+                data-url="{{item.avatars.small}}" bind:tap="handleImage">
+        
+                </image>
+                <text class="actor-name">{{item.name}}</text>
+            </view>
+        </scroll-view>
+</view>
+<view class="active-photo">
+    <view class="nav">剧照</view>   
+    <scroll-view  scroll-x="{{x}}" class="scroll">
+            <view class="people-photo" wx:for="{{movie.photos}}" wx:key="index">
+                <image src="{{item.image}}"
+                data-url="{{item.avatars.image}}" bind:tap="handleImage">
+        
+                </image>
+                
+            </view>
+        </scroll-view>
+</view>
+</view>
+<view class="comment"  bind:tap="handleToggle">
+    <p >查看评论</p>
+</view>
+  
+</view>

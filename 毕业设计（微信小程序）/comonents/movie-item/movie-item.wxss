@@ -1,0 +1,24 @@
+
+.bg{
+    width:180rpx;
+    height: 200rpx;
+    margin-bottom: 20rpx;
+}
+.item{
+   border-bottom: 1px solid #c0bfbf;
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-top: 20rpx;
+}
+.genres{
+    width:100rpx;
+    font-size: 36rpx;
+}
+.average{
+    width:100rpx;
+    color:#ff5f16;
+}
+.name{
+    width:200rpx;
+}
